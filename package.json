@@ -1,24 +1,38 @@
 {
-  "name": "nextjs",
-  "version": "0.1.0",
-  "private": true,
+  "name": "tcga-cancer-analysis-dashboard",
+  "version": "1.0.0",
+  "description": "TCGA Cancer Performance Gap Analysis Dashboard",
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "deploy": "vercel --prod",
+    "deploy-preview": "vercel"
   },
+  "keywords": [
+    "cancer-analysis",
+    "tcga",
+    "bioinformatics",
+    "dashboard",
+    "nextjs",
+    "data-visualization"
+  ],
   "dependencies": {
+    "@types/papaparse": "^5.3.16",
+    "chart.js": "^4.5.0",
+    "next": "15.3.4",
+    "papaparse": "^5.5.3",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0",
-    "next": "15.3.4"
+    "react-chartjs-2": "^5.3.0",
+    "react-dom": "^19.0.0"
   },
   "devDependencies": {
-    "typescript": "^5",
+    "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
-    "@tailwindcss/postcss": "^4",
-    "tailwindcss": "^4"
+    "tailwindcss": "^4",
+    "typescript": "^5"
   }
 }
