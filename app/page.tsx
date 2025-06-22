@@ -239,14 +239,6 @@ export default function Home() {
 
         {/* Tab Content */}
         <div className="space-y-8">
-          {/* Task-Level Table */}
-          <div className="bg-white rounded-lg shadow-lg p-6">
-            <h2 className="text-2xl font-semibold text-gray-800 mb-4">
-              Task-Level Data ({activeTab === 'bagging' ? 'Bagging' : 'No Bagging'})
-            </h2>
-            <TaskTable data={currentTaskData} />
-          </div>
-
           {/* Cancer-Grouped Table */}
           <div className="bg-white rounded-lg shadow-lg p-6">
             <h2 className="text-2xl font-semibold text-gray-800 mb-4">
@@ -261,6 +253,14 @@ export default function Home() {
               Pattern Distribution by Cancer Type
             </h2>
             <PatternPieChart data={currentTaskData} />
+          </div>
+
+          {/* Task-Level Table */}
+          <div className="bg-white rounded-lg shadow-lg p-6">
+            <h2 className="text-2xl font-semibold text-gray-800 mb-4">
+              Task-Level Data ({activeTab === 'bagging' ? 'Bagging' : 'No Bagging'})
+            </h2>
+            <TaskTable data={currentTaskData} />
           </div>
         </div>
       </div>

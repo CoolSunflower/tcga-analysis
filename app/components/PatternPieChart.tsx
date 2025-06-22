@@ -171,7 +171,7 @@ export default function PatternPieChart({ data }: PatternPieChartProps) {
             id="cancer-select"
             value={selectedCancer}
             onChange={(e) => setSelectedCancer(e.target.value)}
-            className="px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+            className="px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 text-gray-900 bg-white"
           >
             <option value="all">All Cancer Types</option>
             {cancerTypes.slice(1).map(cancer => (
