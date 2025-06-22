@@ -29,10 +29,6 @@ interface TaskData {
 interface CancerGroupedData {
   cancer_name: string;
   A_Auc: number;
-  G: number;
-  G_tilda0: number;
-  G_tilda1: number;
-  G_tilda2: number;
   G_ind: number;
   G_mix: number;
   G_NT_ind: number;
@@ -81,10 +77,6 @@ export default function Home() {
       const avgMetrics = {
         cancer_name: cancerName,
         A_Auc: tasks.reduce((sum, task) => sum + task['average A_Auc'], 0) / tasks.length,
-        G: tasks.reduce((sum, task) => sum + task.G, 0) / tasks.length,
-        G_tilda0: tasks.reduce((sum, task) => sum + task.G_tilda0, 0) / tasks.length,
-        G_tilda1: tasks.reduce((sum, task) => sum + task.G_tilda1, 0) / tasks.length,
-        G_tilda2: tasks.reduce((sum, task) => sum + task.G_tilda2, 0) / tasks.length,
         G_ind: tasks.reduce((sum, task) => sum + task.G_ind, 0) / tasks.length,
         G_mix: tasks.reduce((sum, task) => sum + task.G_mix, 0) / tasks.length,
         G_NT_ind: tasks.reduce((sum, task) => sum + task.G_NT_ind, 0) / tasks.length,

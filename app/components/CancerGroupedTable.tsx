@@ -95,30 +95,6 @@ export default function CancerGroupedTable({ data }: CancerGroupedTableProps) {
             </th>
             <th
               className="px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider cursor-pointer hover:bg-gray-100"
-              onClick={() => handleSort('G')}
-            >
-              G {getSortIcon('G')}
-            </th>
-            <th
-              className="px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider cursor-pointer hover:bg-gray-100"
-              onClick={() => handleSort('G_tilda0')}
-            >
-              G̃₀ {getSortIcon('G_tilda0')}
-            </th>
-            <th
-              className="px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider cursor-pointer hover:bg-gray-100"
-              onClick={() => handleSort('G_tilda1')}
-            >
-              G̃₁ {getSortIcon('G_tilda1')}
-            </th>
-            <th
-              className="px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider cursor-pointer hover:bg-gray-100"
-              onClick={() => handleSort('G_tilda2')}
-            >
-              G̃₂ {getSortIcon('G_tilda2')}
-            </th>
-            <th
-              className="px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider cursor-pointer hover:bg-gray-100"
               onClick={() => handleSort('G_ind')}
             >
               G_ind {getSortIcon('G_ind')}
@@ -181,18 +157,6 @@ export default function CancerGroupedTable({ data }: CancerGroupedTableProps) {
               </td>
               <td className="px-4 py-4 whitespace-nowrap text-sm text-gray-900">
                 {formatNumber(row.A_Auc)}
-              </td>
-              <td className="px-4 py-4 whitespace-nowrap text-sm text-gray-900">
-                {formatNumber(row.G)}
-              </td>
-              <td className="px-4 py-4 whitespace-nowrap text-sm text-gray-900">
-                {formatNumber(row.G_tilda0)}
-              </td>
-              <td className="px-4 py-4 whitespace-nowrap text-sm text-gray-900">
-                {formatNumber(row.G_tilda1)}
-              </td>
-              <td className="px-4 py-4 whitespace-nowrap text-sm text-gray-900">
-                {formatNumber(row.G_tilda2)}
               </td>
               <td className="px-4 py-4 whitespace-nowrap text-sm text-gray-900">
                 {formatNumber(row.G_ind)}
