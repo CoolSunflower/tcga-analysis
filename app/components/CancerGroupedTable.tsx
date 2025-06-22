@@ -5,10 +5,6 @@ import { useState } from 'react';
 interface CancerGroupedData {
   cancer_name: string;
   A_Auc: number;
-  G: number;
-  G_tilda0: number;
-  G_tilda1: number;
-  G_tilda2: number;
   G_ind: number;
   G_mix: number;
   G_NT_ind: number;
